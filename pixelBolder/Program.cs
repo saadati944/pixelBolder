@@ -11,7 +11,14 @@ namespace pixelBolder
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                try
+                {
 
+                }
+                catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
+            }
         }
     }
 }
