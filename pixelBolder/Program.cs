@@ -15,6 +15,10 @@ namespace pixelBolder
             {
                 try
                 {
+                    Console.Write("Enter source file path : ");
+                    string sfile = Console.ReadLine();
+                    Bitmap source = (Bitmap)Image.FromFile(sfile);
+
 
                 }
                 catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
