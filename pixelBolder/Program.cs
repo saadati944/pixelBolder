@@ -28,6 +28,12 @@ namespace pixelBolder
                     Console.Write("enter destination file height : ");
                     int dheight = int.Parse(Console.ReadLine());
                     Bitmap dest = new Bitmap(dwidth, dheight);
+
+                    for (int i = 0; i < dwidth; i++)
+                        for (int j = 0; j < dheight; j++)
+                        {
+                            dest.SetPixel(i, j, source.GetPixel((int)((float)i / (float)dwidth * (float)source.Width), (int)((float)j / (float)dheight * (float)source.Height)));
+                        }
                 }
                 catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
             }
