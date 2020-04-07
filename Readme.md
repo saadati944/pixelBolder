@@ -2,7 +2,12 @@
 
 a tiny terminal app to resize pictures with a diffrent way.
 
+with this you can convert 
+
 ![before](https://github.com/saadati944/pixelBolder/raw/master/examples/0.png)
+
+to
+
 ![after](https://github.com/saadati944/pixelBolder/raw/master/examples/0-resized.png)
 
 
