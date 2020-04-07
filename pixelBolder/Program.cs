@@ -18,8 +18,8 @@ namespace pixelBolder
                     Console.Write("Enter source file path : ");
                     string sfile = Console.ReadLine();
                     Bitmap source = (Bitmap)Image.FromFile(sfile);
-
-
+                    Console.WriteLine("source file size : " + source.Width.ToString() + " X " + source.Height.ToString());
+                    Console.WriteLine();
                 }
                 catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
             }
