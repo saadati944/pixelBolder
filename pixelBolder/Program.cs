@@ -20,6 +20,14 @@ namespace pixelBolder
                     Bitmap source = (Bitmap)Image.FromFile(sfile);
                     Console.WriteLine("source file size : " + source.Width.ToString() + " X " + source.Height.ToString());
                     Console.WriteLine();
+
+                    Console.Write("enter destination file path : ");
+                    string dfile = Console.ReadLine();
+                    Console.Write("enter destination file width : ");
+                    int dwidth = int.Parse(Console.ReadLine());
+                    Console.Write("enter destination file height : ");
+                    int dheight = int.Parse(Console.ReadLine());
+                    Bitmap dest = new Bitmap(dwidth, dheight);
                 }
                 catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
             }
