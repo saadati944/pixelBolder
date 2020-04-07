@@ -34,6 +34,10 @@ namespace pixelBolder
                         {
                             dest.SetPixel(i, j, source.GetPixel((int)((float)i / (float)dwidth * (float)source.Width), (int)((float)j / (float)dheight * (float)source.Height)));
                         }
+
+                    dest.Save(dfile);
+                    dest.Dispose();
+                    source.Dispose();
                 }
                 catch (Exception ex) { Console.Write("\n\nError : " + ex.Message + "\n\n"); }
             }
